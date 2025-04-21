@@ -1,0 +1,333 @@
+/* ========================================= */
+/* Global style */
+:root{
+    --primary-color-ligth:#bfc1c8;
+    --secondary-color-ligth:#77500a;
+    /* --secondary-color-ligth:#009ad8; */
+    --darkbrown-color-ligth:#583b05;
+    --white-color:white;
+    --light-white-color: whitesmoke;
+}
+
+
+.container{
+    max-width: 1170px;
+    
+}
+
+.bg-white{
+    background-color: white;
+    box-shadow: 0 0 5px 10px white;
+}
+
+.bg-white .day{
+    font-weight: bold;
+}
+
+
+
+
+/* ========================================= */
+/* Navbar style */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.logo-img {
+    width: 64px !important;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar ul li .myNavListItem {
+    border: transparent 1px solid;
+    border-radius: 30px;
+    padding: 5px 20px !important;
+    margin-left: 10px;
+    color: var(--light-white-color);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.navbar ul li .myNavListItem::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    bottom: -4px;
+    left: 20%;
+    transition: width 0.3s ease;
+}
+
+
+.navbar ul li .myNavListItem:hover::after {
+    width: 60%;
+}
+
+
+.navbar ul li.active .myNavListItem {
+    color: var(--white-color);  /* when the li active */
+}
+
+.navbar ul li.active .myNavListItem::after {
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* Main style */
+main{
+    background-image: url('../images/bg.jpg');
+    min-height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* Hero style */
+.hero{
+    color: var(--primary-color-ligth);
+    padding: 90px;
+}
+
+.hero .text_error{
+    border-radius: 15px;
+    width: 98%;
+    margin: 0 auto 20px;
+    padding: 14px 50px 17px 20px;
+    color: white;
+}
+
+.hero .find-location{
+    margin-bottom: 70px; 
+}
+
+
+.hero form {
+    position: relative;
+}
+
+.hero form input{
+    padding: 14px 50px 17px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.hero form button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0px 40px;
+    border-radius: 30px;   
+    background-color: var(--secondary-color-ligth) !important;
+    border-color: var(--secondary-color-ligth) !important;
+    color: white;
+    transition: all 0.5s;
+    
+}
+
+.hero form button:hover{
+    color: white;
+    background-color: #bf923e !important;
+    border-color: #bf923e !important;
+}
+
+
+.form-control:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+/* ========================================= */
+/* Forecast Table style */
+.forecast-table {
+    padding-bottom: 50px;
+}
+
+.forecast-table .container{
+    background-color: #f3e6af;
+    margin-top: -50px;
+    border-radius: 15px;
+    padding: 25px 10px;
+}
+
+
+.forecast-table .container .inner{
+    margin: 15px;
+    border: 2px brown solid;
+    padding: 30px;
+    border-radius: 20px;
+}   
+
+
+
+
+/* Card Header */
+.forecast-table .container .inner .card-header{
+    color: var(--secondary-color-ligth);
+    border-bottom: var(--secondary-color-ligth) 1px solid;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Card Content */
+.forecast-table .card-content{
+    padding-left: 10px;
+    color: var(--darkbrown-color-ligth);
+
+}
+
+.forecast-table .card-content .location{
+    font-size: 25px;
+    color: var(--darkbrown-color-ligth);
+}
+
+
+
+.forecast-table .card-content .degree .number{
+    font-size: 40px;
+}
+
+.forecast-table .card-content .custom{
+    font-size: 20px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+
+/* Card Footer */
+.forecast-table .card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: var(--secondary-color-ligth);
+    border-top: var(--secondary-color-ligth) 1px solid;
+
+
+}
+
+
+.forecast-table .card-footer span {
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* Footer style */
+footer {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+footer form input{
+    padding: 14px 50px 17px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: var(--secondary-color-ligth) 1px solid;
+}
+
+footer form button{
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0px 15px !important;
+    border-radius: 30px !important;  
+    background-color: var(--secondary-color-ligth) !important;
+    border-color: var(--secondary-color-ligth) !important;
+    color: white !important; 
+    transition: all 0.5s;
+
+}
+
+
+
+footer form button:hover{
+    color: white;
+    background-color: #bf923e !important;
+    border-color: #bf923e !important;
+}
+
+
+
+
+
+/* Social List */
+
+footer .social-list{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+footer .social-list a{
+    text-decoration: none;
+    color: var(--darkbrown-color-ligth);
+    border: var(--secondary-color-ligth) 1px solid;
+    border-radius: 50%;
+    padding: 3px 8px;
+    transition: all 0.5s;
+
+}
+
+footer .social-list a:hover{
+    color: white;
+    background-color: var(--secondary-color-ligth);
+}
+
+
+footer .copy-rigth{
+    margin-top: 20px;
+    color: var(--darkbrown-color-ligth);
+    text-align: center;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+
+
+  <link rel="icon" href="images/rainy-day.png">
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+
+</head>
+
+<body>
+
+
+
+
+
+  <main>
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <div class="logo d-flex justify-content-center align-items-center gap-2">
+          <img src="./images/fav-icon-removebg-preview.png" class="logo-img" alt="img">
+          <a class="navbar-brand fw-bold" href="index.html">Weather</a>
+        </div>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-white"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse flex-grow-0 ms-auto" id="navbarNav">
+          <ul class="navbar-nav me-auto gap-2" id="searchActive">
+
+            <li class="nav-item active">
+              <a class="myNavListItem nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="myNavListItem nav-link" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="myNavListItem nav-link" href="#">Live cameras</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="myNavListItem nav-link" href="#">Photos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="myNavListItem nav-link" href="#">Contact</a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+
+      </div>
+    </nav>
+
+
+
+    <div class="hero">
+      <div class="container">
+        <p id="errorCityMsg" class="text_error bg-danger d-none">Enter city name...</p>
+        <form class="find-location" id="findLocation">
+          <input type="text" class="w-100 form-control" placeholder="Find Your Location">
+          <button class="btn btn-info btn-block" type="submit">Find</button>
+
+        </form>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="forecast-table">
+      <div class="container">
+        <div class="row" id="forecastCard">
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="inner bg-white">
+
+              <div class="card-header d-flex justify-content-between">
+                <div class="day">Friday</div>
+                <div class="date">18 April</div>
+              </div>
+
+              <div class="card-content">
+                <div class="location">Cairo</div>
+                <div class="degree d-flex justify-content-center py-5">
+                  <div class="number">28.2 <sup>o</sup>C</div>
+                </div>
+
+                <div class="status d-flex justify-content-between align-items-center gap-2">
+                  <div class="custom" id="customStatus">Sunny</div>
+                  <div class="icon"><img src="./images/sun.png" alt="sun-img"></div>
+                </div>
+
+              </div>
+
+              <div class="card-footer">
+                <span id="rain"><i class="fa fa-umbrella"></i> 20%</span>
+
+                <span id="wind"><i class="fa fa-wind"></i> 18km/h</span>
+
+                <span id="compass"><i class="fa-solid fa-compass"></i> East</span>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="inner">
+
+              <div class="card-header d-flex justify-content-between">
+                <div class="day">Friday</div>
+                <div class="date">18 April</div>
+              </div>
+
+              <div class="card-content">
+                <div class="location">Cairo</div>
+                <div class="degree d-flex justify-content-center py-5">
+                  <div class="number">28.2 <sup>o</sup>C</div>
+                </div>
+
+                <div class="status d-flex justify-content-between align-items-center gap-2">
+                  <div class="custom" id="customStatus">Sunny</div>
+                  <div class="icon"><img src="./images/sun.png" alt="sun-img"></div>
+                </div>
+
+              </div>
+
+              <div class="card-footer">
+                <span id="rain"><i class="fa fa-umbrella"></i> 20%</span>
+
+                <span id="wind"><i class="fa fa-wind"></i> 18km/h</span>
+
+                <span id="compass"><i class="fa-solid fa-compass"></i> East</span>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <div class="inner">
+
+              <div class="card-header d-flex justify-content-between">
+                <div class="day">Friday</div>
+                <div class="date">18 April</div>
+              </div>
+
+              <div class="card-content">
+                <div class="location">Cairo</div>
+                <div class="degree d-flex justify-content-center py-5">
+                  <div class="number">28.2 <sup>o</sup>C</div>
+                </div>
+
+                <div class="status d-flex justify-content-between align-items-center gap-2">
+                  <div class="custom" id="customStatus">Sunny</div>
+                  <div class="icon"><img src="./images/sun.png" alt="sun-img"></div>
+                </div>
+
+              </div>
+
+              <div class="card-footer">
+                <span id="rain"><i class="fa fa-umbrella"></i> 20%</span>
+
+                <span id="wind"><i class="fa fa-wind"></i> 18km/h</span>
+
+                <span id="compass"><i class="fa-solid fa-compass"></i> East</span>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+  
+  <footer>
+    <div class="container">
+      <form class="subscribe-email position-relative" id="subscribeEmail">
+
+        <input type="email" class="w-100" placeholder="Enter your email to subscribe">
+        <button class="btn" type="submit">Subscribe</button>
+
+      </form>
+
+      <div class="social-list">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+      </div>
+
+
+      <p class="copy-rigth">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

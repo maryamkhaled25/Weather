@@ -1,0 +1,52 @@
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .forecast-card {
+        padding: 10px;
+    }
+
+    .hero {
+        height: 40vh;
+        padding: 15px;
+    }
+    .hero .container{
+        max-width: 1700px;
+
+    }
+
+    .hero form {
+        margin: 20px 0;
+    }
+    
+    .hero form button{
+        position: static;
+        margin: 20px auto 0 !important;
+        margin-left: 120px !important;
+        padding: 7px 80px;
+        border-radius: 30px;   
+        background-color: var(--secondary-color-ligth) !important;
+        border-color: var(--secondary-color-ligth) !important;
+        color: white;
+        transition: all 0.5s;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    .hero .container{
+        max-width: 1800px;
+
+    }
+    .forecast-card {
+        padding: 20px;
+    }
+    .forecast-card .col-4 {
+        margin-bottom: 15px;
+    }
+}
