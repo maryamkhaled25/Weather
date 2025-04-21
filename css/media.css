@@ -23,7 +23,7 @@
     .hero form button{
         position: static;
         margin: 20px auto 0 !important;
-        margin-left: 120px !important;
+        margin-left: 20% !important;
         padding: 7px 80px;
         border-radius: 30px;   
         background-color: var(--secondary-color-ligth) !important;
